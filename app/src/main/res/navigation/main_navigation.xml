@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main_navigation"
+        app:startDestination="@id/mainScreen">
+
+    <fragment
+            android:id="@+id/mainScreen"
+            android:name="com.example.habbit.MainScreen"
+            android:label="Habbit"
+            tools:layout="@layout/main_screen">
+        <action
+                android:id="@+id/action_mainScreen_to_itemScreen"
+                app:destination="@id/itemScreen" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/aboutScreen"
+            android:name="com.example.habbit.AboutScreen"
+            android:label="About"
+            tools:layout="@layout/about_screen" />
+
+    <fragment
+            android:id="@+id/allStatScreen"
+            android:name="com.example.habbit.AllStatScreen"
+            android:label="General statistics"
+            tools:layout="@layout/allstat_screen" />
+
+    <fragment
+            android:id="@+id/addHabbitScreen"
+            android:name="com.example.habbit.AddHabbitScreen"
+            android:label="Add habit"
+            tools:layout="@layout/addhabbit_screen">
+        <action
+                android:id="@+id/action_addHabbitScreen_to_mainScreen"
+                app:destination="@id/mainScreen" />
+    </fragment>
+    <fragment
+            android:id="@+id/itemScreen"
+            android:name="com.example.habbit.ItemScreen"
+            android:label="Item Screen"
+            tools:layout="@layout/item_screen">
+        <action
+                android:id="@+id/action_itemScreen_to_mainScreen"
+                app:destination="@id/mainScreen"
+                app:popUpTo="@+id/mainScreen"
+                app:popUpToInclusive="true" />
+        <action
+                android:id="@+id/action_itemScreen_to_editHabbitScreen2"
+                app:destination="@id/editHabbitScreen2" />
+    </fragment>
+    <fragment
+            android:id="@+id/editHabbitScreen2"
+            android:name="com.example.habbit.EditHabbitScreen"
+            android:label="Edit"
+            tools:layout="@layout/addhabbit_screen">
+        <action
+                android:id="@+id/action_editHabbitScreen2_to_mainScreen"
+                app:destination="@id/mainScreen" />
+    </fragment>
+</navigation>

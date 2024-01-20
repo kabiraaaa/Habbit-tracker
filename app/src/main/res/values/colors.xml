@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E05E0F</color>
+    <color name="item_color">#F1F1F1</color>
+    <color name="colorAccent">#41BB16</color>
+    <color name="colorPrimaryDark">#E6FF5500</color>
+    <color name="app_bar_color">#AEFF6C00</color>
+    <color name="date_color">#FFFFFF</color>
+    <color name="dark_gray">#242424</color>
+    <color name="streak_color">#ECFFE1</color>
+    <color name="black">#000000</color>
+
+    <array name="picker_colors">
+        <item>#FF3030</item>
+        <item>#FFAF24</item>
+        <item>#FFF52B</item>
+        <item>#D9FF00</item>
+        <item>#38FF38</item>
+        <item>#1EFFB9</item>
+        <item>#198CFF</item>
+        <item>#7519FF</item>
+        <item>#FF34FF</item>
+
+
+    </array>
+</resources>
+

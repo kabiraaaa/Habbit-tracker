@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="column_number">10</integer>
+    <integer name="shadow">5</integer>
+    <integer name="shadow_dx">15</integer>
+    <integer name="shadow_dy">30</integer>
+</resources>

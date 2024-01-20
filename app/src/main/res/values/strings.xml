@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Habbit</string>
+    <string name="aobut_name">Habbit</string>
+    <string name="about_text">This appliclication was created \n
+        to help you track your daily goals. \n
+        Add new habits and track information about them.\n
+        \n Get on a journey to become your \n better self!\n</string>
+    <string name="overflow_about">About</string>
+    <string name="habit_name">Habit Name</string>
+    <string name="checkbox_traking">Tracking</string>
+    <string name="button_ok">OK</string>
+    <string name="app_bar_color">#19334d</string>
+    <string name="date_placeholder">Current Date</string>
+    <string name="prompt_question">Erase all data?</string>
+    <string name="button_noo">Cancel</string>
+</resources>

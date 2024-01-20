@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+        <variable
+                name="allStatViewModel"
+                type="com.example.habbit.AllStatViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                android:id="@+id/scrollView2"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.442"
+                style="@android:style/Widget.DeviceDefault.Light.ScrollView"
+                app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                <TextView
+                        android:text="Habit Stats"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView2"
+                        android:elevation="5dp"
+                        android:textSize="18sp"
+                        android:gravity="left"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto" />
+
+                <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/placeholder_chart"
+                        android:layout_height="350dp"
+                        android:layout_width="match_parent"
+                        android:elevation="5dp"
+                        android:background="@drawable/rectangle_background"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp" />
+
+                <TextView
+                        android:text="Activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView3"
+                        android:elevation="6dp"
+                        android:visibility="visible"
+                        android:textSize="18sp"
+                        android:gravity="left"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto" />
+
+                <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/all_barchart"
+                        android:layout_height="300dp"
+                        android:layout_width="match_parent"
+                        android:visibility="visible"
+                        android:elevation="5dp"
+                        android:background="@drawable/rectangle_background"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

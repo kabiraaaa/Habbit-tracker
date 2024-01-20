@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/overflow_about"
+          android:id="@+id/aboutScreen"/>
+    <item android:title="Stats"
+          android:id="@+id/allStatScreen" />
+    <item android:title="Clear Data" android:id="@+id/clear"/>
+</menu>
